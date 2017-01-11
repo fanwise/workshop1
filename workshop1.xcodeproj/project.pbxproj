@@ -14,6 +14,7 @@
 		2E48F0D31E23CBAD0038E83A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E48F0D11E23CBAD0038E83A /* LaunchScreen.storyboard */; };
 		2E48F0DE1E23CBAD0038E83A /* workshop1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48F0DD1E23CBAD0038E83A /* workshop1Tests.swift */; };
 		2E48F0E91E23CBAD0038E83A /* workshop1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48F0E81E23CBAD0038E83A /* workshop1UITests.swift */; };
+		2E48F0F71E23CED00038E83A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48F0F61E23CED00038E83A /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2E48F0E41E23CBAD0038E83A /* workshop1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = workshop1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E48F0E81E23CBAD0038E83A /* workshop1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workshop1UITests.swift; sourceTree = "<group>"; };
 		2E48F0EA1E23CBAD0038E83A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E48F0F61E23CED00038E83A /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				2E48F0C81E23CBAD0038E83A /* AppDelegate.swift */,
 				2E48F0CA1E23CBAD0038E83A /* ViewController.swift */,
+				2E48F0F61E23CED00038E83A /* ViewModel.swift */,
 				2E48F0CC1E23CBAD0038E83A /* Main.storyboard */,
 				2E48F0CF1E23CBAD0038E83A /* Assets.xcassets */,
 				2E48F0D11E23CBAD0038E83A /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E48F0CB1E23CBAD0038E83A /* ViewController.swift in Sources */,
+				2E48F0F71E23CED00038E83A /* ViewModel.swift in Sources */,
 				2E48F0C91E23CBAD0038E83A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
