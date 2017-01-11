@@ -8,7 +8,8 @@
 
 import Foundation
 
-class ViewModel:NSObject {
+class ViewModel: NSObject {
+    
     var imageName: String {
         return "dog.jpg" // 自己在工程里面放一张图即可
     }

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     let name = UILabel()
     let address = UILabel()
     let button = UIButton()
-    var stackview = UIStackView()
+    var stackview = KeyValuesStackView()
     let viewModel = ViewModel()
     
     fileprivate var aspectRatio: CGFloat = 1
@@ -31,6 +31,18 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        if traitCollection.horizontalSizeClass == .regular {
+            NSLayoutConstraint.deactivate(compactConstraints)
+            NSLayoutConstraint.activate(regularConstraints)
+        } else {
+            NSLayoutConstraint.deactivate(regularConstraints)
+            NSLayoutConstraint.activate(compactConstraints)
+        }
     }
     
     func configViews() {
@@ -57,39 +69,7 @@ class ViewController: UIViewController {
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.blue.cgColor
         
-        stackview = createStackView()
-    }
-    
-    func createStackView() -> UIStackView {
-        var stackViews = [UIStackView]()
-        
-        for (key, value) in viewModel.stackViewContent {
-            let keyLabel = UILabel()
-            keyLabel.text = key
-            keyLabel.textColor = .gray
-            
-            let valueLabel = UILabel()
-            valueLabel.text = value
-            
-            var keyValue = [UILabel]()
-            keyValue.append(keyLabel)
-            keyValue.append(valueLabel)
-            
-            let stackView = UIStackView(arrangedSubviews: keyValue)
-            stackView.translatesAutoresizingMaskIntoConstraints = false
-            stackView.axis = .horizontal
-            
-            stackView.distribution = .fillEqually
-            
-            stackViews.append(stackView)
-        }
-        
-        let keyValues = UIStackView(arrangedSubviews: stackViews)
-        keyValues.translatesAutoresizingMaskIntoConstraints = false
-        keyValues.axis = .vertical
-        keyValues.distribution = .equalSpacing
-        
-        return keyValues
+        stackview.configStackView(viewModel: viewModel)
     }
     
     func addViews() {
@@ -171,18 +151,5 @@ class ViewController: UIViewController {
         regularConstraints.append(stackview.topAnchor.constraint(equalTo: address.bottomAnchor, constant: 20))
     }
     
-    
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        
-        if traitCollection.horizontalSizeClass == .regular {
-            NSLayoutConstraint.deactivate(compactConstraints)
-            NSLayoutConstraint.activate(regularConstraints)
-        } else {
-            NSLayoutConstraint.deactivate(regularConstraints)
-            NSLayoutConstraint.activate(compactConstraints)
-        }
-    }
-
 }
 

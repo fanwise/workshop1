@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E03440E1E2629BF0010AC04 /* KeyValueStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E03440D1E2629BF0010AC04 /* KeyValueStackView.swift */; };
 		2E48F0C91E23CBAD0038E83A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48F0C81E23CBAD0038E83A /* AppDelegate.swift */; };
 		2E48F0CB1E23CBAD0038E83A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48F0CA1E23CBAD0038E83A /* ViewController.swift */; };
 		2E48F0CE1E23CBAD0038E83A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E48F0CC1E23CBAD0038E83A /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E03440D1E2629BF0010AC04 /* KeyValueStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueStackView.swift; sourceTree = "<group>"; };
 		2E48F0C51E23CBAD0038E83A /* workshop1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workshop1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E48F0C81E23CBAD0038E83A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E48F0CA1E23CBAD0038E83A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				2E48F0CF1E23CBAD0038E83A /* Assets.xcassets */,
 				2E48F0D11E23CBAD0038E83A /* LaunchScreen.storyboard */,
 				2E48F0D41E23CBAD0038E83A /* Info.plist */,
+				2E03440D1E2629BF0010AC04 /* KeyValueStackView.swift */,
 			);
 			path = workshop1;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E48F0CB1E23CBAD0038E83A /* ViewController.swift in Sources */,
+				2E03440E1E2629BF0010AC04 /* KeyValueStackView.swift in Sources */,
 				2E48F0F71E23CED00038E83A /* ViewModel.swift in Sources */,
 				2E48F0C91E23CBAD0038E83A /* AppDelegate.swift in Sources */,
 			);
@@ -518,6 +522,7 @@
 				2E48F0EF1E23CBAD0038E83A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E48F0F01E23CBAD0038E83A /* Build configuration list for PBXNativeTarget "workshop1Tests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +531,7 @@
 				2E48F0F21E23CBAD0038E83A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E48F0F31E23CBAD0038E83A /* Build configuration list for PBXNativeTarget "workshop1UITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +540,7 @@
 				2E48F0F51E23CBAD0038E83A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
